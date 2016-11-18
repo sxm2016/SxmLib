@@ -13,8 +13,6 @@ public class BaseApp extends Application {
 
     private final static String TAG = "BaseApp";
 
-    private ArrayList<Activity> activitiesList = new ArrayList<>();
-
     @Override
     public void onCreate() {
         super.onCreate();
@@ -26,16 +24,5 @@ public class BaseApp extends Application {
         System.gc();
     }
 
-    public void finishActivity() {
-        for (Activity activity : activitiesList) {
-            if (null != activity) {
-                activity.finish();
-            }
-        }
-    }
-
-    public boolean isActivityListEmpty() {
-        return activitiesList.size() == 0;
-    }
 }
 
