@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 灰色横向直线 -->
+    <style name="ViewHLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">#dedede</item>
+    </style>
+
+    <!-- 灰色竖直直线 -->
+    <style name="ViewVLine">
+        <item name="android:layout_width">1px</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">#dedede</item>
+    </style>
+
+    <!-- 按钮基类 -->
+    <style name="BtnBase">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_40</item>
+        <item name="android:layout_marginLeft">@dimen/dp_20</item>
+        <item name="android:layout_marginRight">@dimen/dp_20</item>
+        <item name="android:background">@drawable/selector_btn_blue</item>
+        <item name="android:textColor">@color/selector_btn_text_color</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!-- 蓝色按钮 -->
+    <style name="BtnBlue" parent="@style/BtnBase">
+        <item name="android:background">@drawable/selector_btn_blue</item>
+    </style>
+
+    <!-- 文字基类（默认：黑色、14dp） -->
+    <style name="TextBase">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+    </style>
+
+    <!-- 白色文字 -->
+    <style name="TextWhite" parent="@style/TextBase">
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <!-- 白色大号文字 -->
+    <style name="TextWhiteLarge" parent="@style/TextBase">
+        <item name="android:textSize">@dimen/sp_18</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <!-- 蓝色文字 -->
+    <style name="TextBlue" parent="@style/TextBase">
+        <item name="android:textColor">@color/common_color_blue</item>
+    </style>
+
+    <!-- 灰色文字 -->
+    <style name="TextGray" parent="@style/TextBase">
+        <item name="android:textColor">#cccccc</item>
+    </style>
+
+</resources>

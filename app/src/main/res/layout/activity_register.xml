@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_header" />
+
+    <LinearLayout
+        style="@style/UserRegister_Linear"
+        android:layout_marginTop="@dimen/dp_40">
+
+        <ImageView
+            style="@style/UserRegister_Linear_Iv"
+            android:scaleType="center"
+            android:src="@mipmap/ic_user_phone" />
+
+        <EditText
+            style="@style/UserRegister_Linear_Et"
+            android:hint="请输入手机号码" />
+
+    </LinearLayout>
+
+    <View style="@style/UserRegister_HLine" />
+
+    <LinearLayout style="@style/UserRegister_Linear">
+
+        <ImageView
+            style="@style/UserRegister_Linear_Iv"
+            android:scaleType="center"
+            android:src="@mipmap/ic_user_lock" />
+
+        <EditText
+            style="@style/UserRegister_Linear_Et"
+            android:hint="6-15位数字字符下划线组成" />
+
+    </LinearLayout>
+
+    <View style="@style/UserRegister_HLine" />
+
+    <LinearLayout style="@style/UserRegister_Linear">
+
+        <ImageView
+            style="@style/UserRegister_Linear_Iv"
+            android:scaleType="center"
+            android:src="@mipmap/ic_user_avatar" />
+
+        <EditText
+            style="@style/UserRegister_Linear_Et"
+            android:layout_width="wrap_content"
+            android:focusable="false"
+            android:hint="选择身份" />
+
+        <ImageView
+            style="@style/UserRegister_Linear_Iv"
+            android:layout_width="12.5dp"
+            android:layout_height="9dp"
+            android:layout_marginLeft="@dimen/dp_08"
+            android:layout_marginStart="@dimen/dp_08"
+            android:src="@mipmap/ic_drop_down" />
+    </LinearLayout>
+
+    <View style="@style/UserRegister_HLine" />
+
+    <LinearLayout style="@style/UserRegister_Linear">
+
+        <ImageView
+            style="@style/UserRegister_Linear_Iv"
+            android:scaleType="center"
+            android:src="@mipmap/ic_user_capcha" />
+
+        <EditText
+            style="@style/UserRegister_Linear_Et"
+            android:hint="输入验证码" />
+
+    </LinearLayout>
+
+    <View style="@style/UserRegister_HLine" />
+
+    <LinearLayout
+        style="@style/UserRegister_Linear"
+        android:layout_marginTop="@dimen/dp_32"
+        android:gravity="center">
+
+        <TextView
+            style="@style/TextBase"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:text="点击注册表示同意" />
+
+        <TextView
+            style="@style/TextBlue"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginStart="@dimen/dp_10"
+            android:text="用户协议" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_register"
+        style="@style/BtnBlue"
+        android:layout_marginTop="@dimen/dp_32"
+        android:text="注册" />
+</LinearLayout>

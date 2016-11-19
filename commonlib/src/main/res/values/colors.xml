@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- common -->
+    <color name="common_color_blue">#0b63ad</color>
+    <color name="common_color_blue_press">#0b518d</color>
+    <color name="translucence_white">#80ffffff</color>
+
+</resources>

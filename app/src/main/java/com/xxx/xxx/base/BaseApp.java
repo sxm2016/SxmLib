@@ -12,17 +12,19 @@ import java.util.ArrayList;
 public class BaseApp extends Application {
 
     private final static String TAG = "BaseApp";
+    private ArrayList<Activity> lstActivity = new ArrayList<>();
 
     @Override
     public void onCreate() {
         super.onCreate();
     }
 
-    @Override
-    public void onLowMemory() {
-        super.onLowMemory();
-        System.gc();
+    public void addActivity(Activity a) {
+        lstActivity.add(a);
     }
 
+    public void removeActivity(Activity a) {
+        lstActivity.remove(a);
+    }
 }
 
